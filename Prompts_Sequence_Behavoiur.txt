@@ -1,0 +1,57 @@
+ Driving Behavior 
+
+Lane Change Completed:
+"Has the car already completed a lane change in any of the pictures?"
+"Is there any indication that the car has finished changing lanes in the given images?"
+
+Ongoing Lane Change:
+"Is the car currently in the process of changing lanes in any of the pictures?"
+"Can you identify any image where the car is actively engaged in a lane change?"
+
+Turn Signal Activation:
+"In any of the pictures, has the car activated its turn signal, suggesting a lane change?"
+"Is there evidence of the car signaling a lane change in the provided images?"
+
+Proximity to Lane Markings:
+"Does any picture show the car in close proximity to lane markings, indicating an ongoing or imminent lane change?"
+"Can you confirm if the car is close to lane markings in any of the images, possibly signifying a lane change?"
+
+Directional Movement:
+"Is there any evidence of lateral movement in the pictures, suggesting a lane change has occurred or is occurring?"
+"Do any of the images show the car moving sideways, possibly indicating a lane change?"
+
+Adjacent Lane Presence:
+"In any of the pictures, is the car located in the adjacent lane, suggesting a successful lane change?"
+"Can you confirm if the car has moved into the neighboring lane in any of the provided images?"
+
+Sequence Images 
+To determine which picture in a sequence depicts a car doing a lane change, you can use specific prompts that focus on the visual elements and characteristics associated with a lane change. Here are some prompts you can use:
+Identify Lane Markings:
+"Is the car positioned between lane markings in any of the pictures?"
+"Look for the presence of dashed or solid lane markings. Does any picture show the car crossing these markings?"
+
+
+Direction of Car Movement:
+"Examine the direction of the car in each picture. Is there any picture where the car appears to be changing its direction laterally?"
+"Check if the car is moving towards the adjacent lane in any of the images."
+
+Wheel Orientation:
+"Observe the wheels of the car in each picture. Is there any indication that the wheels are turning, suggesting a lane change?"
+
+Surrounding Vehicles:
+"Are there other vehicles in the adjacent lane in any of the pictures?"
+"Look for signs of interaction or proximity with other vehicles in the neighboring lanes."
+
+Signal Lights:
+"Check for the activation of turn signals. Does any picture show the car signaling a lane change?"
+
+Position in the Lane:
+"Evaluate the position of the car within its current lane. Does any picture show the car positioning itself towards the edge of the lane, indicating a lane change?"
+
+Sequential Analysis:
+"Examine the pictures in sequence. Look for a progression where the car starts in one lane and gradually moves into another lane."
+
+Surrounding Environment:
+"Consider the background and surroundings in each picture. Does any picture show a change in the environment consistent with a lane change?"
+
+

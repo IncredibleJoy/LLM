@@ -1,3 +1,59 @@
+Sure, I can guide you through the process of reading an MP4 file, applying transformations using OpenCV, and saving the modified video. Here's a basic Python script to get you started:
+
+```python
+import cv2
+
+# Open the video file
+video_capture = cv2.VideoCapture('input_video.mp4')
+
+# Get video properties
+fps = int(video_capture.get(cv2.CAP_PROP_FPS))
+width = int(video_capture.get(cv2.CAP_PROP_FRAME_WIDTH))
+height = int(video_capture.get(cv2.CAP_PROP_FRAME_HEIGHT))
+
+# Define the codec and create VideoWriter object
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+output_video = cv2.VideoWriter('output_video.avi', fourcc, fps, (width, height))
+
+# Check if video file opened successfully
+if not video_capture.isOpened():
+    print("Error: Unable to open video file")
+
+# Read until video is completed
+while video_capture.isOpened():
+    # Capture frame-by-frame
+    ret, frame = video_capture.read()
+    
+    if ret:
+        # Apply your transformations here
+        # For example, you can convert to grayscale
+        gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        
+        # Write the modified frame to the output video file
+        output_video.write(gray_frame)
+        
+        # Display the resulting frame
+        cv2.imshow('Frame', gray_frame)
+        
+        # Press 'q' to exit
+        if cv2.waitKey(25) & 0xFF == ord('q'):
+            break
+    else:
+        break
+
+# Release video capture and writer
+video_capture.release()
+output_video.release()
+
+# Close all OpenCV windows
+cv2.destroyAllWindows()
+```
+
+Make sure to replace `'input_video.mp4'` with the path to your input video file and `'output_video.avi'` with the desired path for the modified video file. This script will convert each frame of the input video to grayscale and save the modified video. You can customize the transformations as needed.
+
+
+zzzzzzzzzzzzxxxxxxxxxxxxxxx
+
 import streamlit as st
 from PIL import Image
 from deepface import DeepFace
